@@ -16,7 +16,7 @@
             <td><img src="{{asset('image/'.$image->image_filename)}}" height="200px" alt=""></td>
             <td>
                 <a href="{{route('producteditpage',$image->id)}}">edit</a>
-                <a href="">Delete</a>
+                <a href="/deleteproduct/{{$image->id}}">Delete</a>
             </td>
         </tr>
         @endforeach
